@@ -1,0 +1,17 @@
+
+============================================================
+  1. Combine both
+============================================================
+  bundle: ships in a box + downloads instantly
+
+============================================================
+  2. Pick one
+============================================================
+  ships in a box
+
+============================================================
+  3. Called through each interface type
+============================================================
+  as Shippable:    bundle: ships in a box + downloads instantly
+  as Downloadable: bundle: ships in a box + downloads instantly
+   >> Same object, same override - the static type does not matter for members.

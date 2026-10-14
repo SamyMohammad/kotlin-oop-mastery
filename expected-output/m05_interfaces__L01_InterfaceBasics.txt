@@ -1,0 +1,20 @@
+
+============================================================
+  1. Interface as a type
+============================================================
+  PARCEL #A1
+  INVOICE 1001
+   >> printAll() knows only Printable - it accepts parcels, invoices, anything printable.
+
+============================================================
+  2. One class, many interfaces
+============================================================
+  PARCEL #B7
+  https://track.example/B7
+
+============================================================
+  3. Shop shipping methods
+============================================================
+  Standard: 2150 cents, 3-5 days
+  Pickup at Maadi: 500 cents, next day
+   >> Checkout loops over ShippingMethod without knowing any concrete class.

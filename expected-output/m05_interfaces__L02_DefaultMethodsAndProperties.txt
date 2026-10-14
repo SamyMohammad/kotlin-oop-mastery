@@ -1,0 +1,19 @@
+
+============================================================
+  1. Using the defaults
+============================================================
+  Mug - 4500
+  Sticker (free)
+
+============================================================
+  2. Overriding a default
+============================================================
+  Gift card worth 10000
+
+============================================================
+  3. Computed interface property
+============================================================
+  Mug: isFree=false
+  Sticker: isFree=true
+  Gift card: isFree=true
+   >> isFree is computed from priceCents. No field lives in the interface.
