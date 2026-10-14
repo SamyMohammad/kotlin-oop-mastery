@@ -83,7 +83,7 @@ val tenOff = DiscountRule(10)
 tenOff(10_000)
 ```
 
-### الـ Comparable بيدّيك حاجات كتير
+ده object تقدر تناديه كأنه function. مفيد للـ use cases في الـ clean architecture: `getProducts()` بدل `getProducts.execute()`.
 
 ### المساواة: `==` و `===`
 
