@@ -1,0 +1,28 @@
+
+============================================================
+  1. Primary constructor only
+============================================================
+  1. property `first` initializer
+  2. first init block
+     label inside first init = null
+  3. property `second` initializer
+  4. second init block, label = order-7
+   >> Initializers and init blocks are one sequence, top to bottom.
+
+============================================================
+  2. Through the secondary constructor
+============================================================
+  1. property `first` initializer
+  2. first init block
+     label inside first init = null
+  3. property `second` initializer
+  4. second init block, label = order-8
+  5. secondary constructor body (gift)
+   >> The secondary body runs after the whole primary initialization.
+
+============================================================
+  3. The trap
+============================================================
+  The compiler blocks direct reads of a property declared below an init block,
+  but a function call slips through and sees the default (null/0/false).
+   >> Keep init blocks after the properties they read.

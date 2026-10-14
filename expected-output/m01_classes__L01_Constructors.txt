@@ -1,0 +1,29 @@
+
+============================================================
+  1. Primary constructor
+============================================================
+  Sara <sara@mail.com> phone=********678 vip=false
+
+============================================================
+  2. Default and named arguments
+============================================================
+  Omar <omar@mail.com> phone=********432 vip=true
+   >> Named arguments can come in any order. Defaults remove the need for overloads.
+
+============================================================
+  3. var vs val in the header
+============================================================
+  after change: Sara <sara@new.com> phone=********678 vip=false
+
+============================================================
+  4. Secondary constructor
+============================================================
+  secondary constructor ran for Guest
+  Guest <guest@shop.local> phone=000 vip=false
+
+============================================================
+  5. The shop Product
+============================================================
+  Pen costs 900 cents after 10% off
+  rejected: price must not be negative
+   >> The init block validates every object at birth. No invalid Product can exist.

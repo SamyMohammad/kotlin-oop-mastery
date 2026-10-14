@@ -1,0 +1,23 @@
+
+============================================================
+  1. lateinit before and after
+============================================================
+  ready? false
+  reading too early threw UninitializedPropertyAccessException
+  ready? true
+  Welcome, Sara
+
+============================================================
+  2. lazy computes once
+============================================================
+  catalog created, index not built yet
+     computing search index...
+  p -> [Pen, Paper]
+  m -> [Mug]
+   >> 'computing search index' printed once even though we read it twice.
+
+============================================================
+  3. Which one to use?
+============================================================
+  lateinit : value comes from outside later (DI, lifecycle callback)
+  lazy     : value is computed by the class itself, on demand
