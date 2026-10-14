@@ -1,0 +1,29 @@
+
+============================================================
+  1. Everything is an Any
+============================================================
+  Int is Any? true
+  String is Any? true
+  Cart is Any? true
+   >> Any is the root of every class, like Object in Java.
+
+============================================================
+  2. Any vs Any?
+============================================================
+  maybe is Any? false
+  maybe == null? true
+   >> null is NOT an Any. It only fits in Any? (the nullable root).
+
+============================================================
+  3. Unit is a real object
+============================================================
+  hello() returned: kotlin.Unit
+  same object as Unit? same
+   >> Unit is like void, but it is a value you can store and print.
+
+============================================================
+  4. Nothing - the function that never returns
+============================================================
+  name = Pen   (type is String, not String?)
+  thrown: IllegalStateException(name missing)
+   >> Because fail() returns Nothing, the compiler knows `name` is never null.

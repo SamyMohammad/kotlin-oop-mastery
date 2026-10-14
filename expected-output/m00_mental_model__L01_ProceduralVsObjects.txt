@@ -1,0 +1,16 @@
+
+============================================================
+  1. Same result, two styles
+============================================================
+  procedural total = 3500
+  object total     = 3500
+   >> Same numbers. The difference shows up when someone makes a mistake.
+
+============================================================
+  2. A bad price
+============================================================
+  procedural total = 0   <- negative price accepted, money vanished
+  procedural lines after someone called clear() = 0
+  object refused: price must not be negative
+  object total     = 3500, lines = 2
+   >> The object protects its own rules. That is the whole point of OOP.

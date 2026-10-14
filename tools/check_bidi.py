@@ -62,4 +62,5 @@ def main(paths: list[str]) -> int:
 
 
 if __name__ == "__main__":
+    sys.stdout.reconfigure(encoding="utf-8")  # Windows console defaults to cp1252
     sys.exit(main(sys.argv[1:] or ["docs", "README.md"]))

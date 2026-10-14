@@ -1,0 +1,27 @@
+
+============================================================
+  1. Encapsulation
+============================================================
+  gift card balance = 1500
+   >> You cannot write card.balanceCents = 0 - it is private.
+
+============================================================
+  2. Inheritance
+============================================================
+  card *4242, payment of 2000
+  CardPayment is a Payment? true
+
+============================================================
+  3. Polymorphism
+============================================================
+  card *1111, payment of 100
+  cash, payment of 200
+  payment of 300
+   >> One loop, one call - each object answers in its own way.
+
+============================================================
+  4. Abstraction
+============================================================
+  FlatShipping: 2500 cents for 800g
+  WeightShipping: 1800 cents for 800g
+   >> The caller only knows the Shipping contract.
