@@ -1,0 +1,17 @@
+
+============================================================
+  1. Local class + local function
+============================================================
+  #1: 500 (running 500)
+  #2: 4500 (running 5000)
+  #3: 1000 (running 6000)
+  TOTAL: 6000
+
+============================================================
+  2. A lambda keeps captured state alive
+============================================================
+  1
+  2
+  3
+  a new counter starts again: 1
+   >> Each call to makeCounter creates its own `count` box.

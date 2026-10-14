@@ -1,0 +1,23 @@
+
+============================================================
+  1. Anonymous Comparator
+============================================================
+  [Pen, Mug, Cap]
+
+============================================================
+  2. One object, two interfaces
+============================================================
+  1000 off: 4500 -> 3500
+
+============================================================
+  3. Extra members on a local anonymous object
+============================================================
+  hits = 2
+   >> Inside this function `tracker` keeps its anonymous type, so hits is visible.
+   >> Returned from a public function it would become plain Any.
+
+============================================================
+  4. Object expression vs lambda
+============================================================
+  [Cap, Mug, Pen]
+   >> For a single-method interface a lambda is shorter. Use `object :` when you need state or several members.

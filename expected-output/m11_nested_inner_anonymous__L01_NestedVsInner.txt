@@ -1,0 +1,19 @@
+
+============================================================
+  1. Nested class: no outer instance needed
+============================================================
+  Address in Cairo
+
+============================================================
+  2. Inner class: needs an outer instance
+============================================================
+  Maadi branch counter 1 (visit #1)
+  Maadi branch counter 2 (visit #2)
+  Maadi branch counter 1 (visit #3)
+   >> Both checkouts share the same Store, so visits keeps counting across them.
+
+============================================================
+  3. Different outer, different state
+============================================================
+  Zamalek branch counter 1 (visit #1)
+   >> Prefer nested (the default). Use inner only when you really need the outer object.
