@@ -1,0 +1,19 @@
+
+============================================================
+  1. Equality is by value
+============================================================
+  a == b ? same
+
+============================================================
+  2. Unboxed and boxed uses
+============================================================
+  paying EGP 5.00
+  nullable: EGP 7.00
+  sum of list: EGP 19.00
+
+============================================================
+  3. What it looks like at runtime
+============================================================
+  runtime class when boxed: Price
+  toString: Price(cents=500)
+   >> Value classes give type safety for free in most code; boxing happens only at the edges.
