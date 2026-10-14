@@ -1,0 +1,17 @@
+
+============================================================
+  1. One hierarchy for errors
+============================================================
+  No connection for 5s
+  Card declined: insufficient funds
+  Sorry, out of stock
+  Server busy
+
+============================================================
+  2. A second sealed interface cuts across the first
+============================================================
+  NetworkDown: retry? true
+  CardDeclined: retry? false
+  OutOfStock: retry? false
+  ServerBusy: retry? true
+   >> NetworkDown and ServerBusy implement two sealed interfaces at once. A sealed class could not.

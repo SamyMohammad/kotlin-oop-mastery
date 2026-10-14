@@ -1,0 +1,19 @@
+
+============================================================
+  1. Each state carries its own data
+============================================================
+  spinner
+  list of 2: Pen, Mug
+  error 'No internet' [Retry]
+
+============================================================
+  2. data object
+============================================================
+  toString of a data object: Loading
+   >> A plain `object` would print ProductsUiState$Loading@hash. `data object` prints its name.
+
+============================================================
+  3. Why not an enum?
+============================================================
+  An enum constant cannot hold a different product list per use.
+  Success(listOf(...)) creates a new value each time - enums cannot.

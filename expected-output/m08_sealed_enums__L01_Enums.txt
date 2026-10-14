@@ -1,0 +1,24 @@
+
+============================================================
+  1. entries, name, ordinal
+============================================================
+  0 CARD [card] -> card, 2% fee
+  1 WALLET [wallet] -> e-wallet, 1% fee
+  2 CASH [cash] -> cash on delivery
+
+============================================================
+  2. Properties and methods
+============================================================
+  fee on 10000 by CARD = 200
+
+============================================================
+  3. valueOf
+============================================================
+  valueOf("WALLET") = WALLET
+  valueOf("BITCOIN") threw IllegalArgumentException
+
+============================================================
+  4. Each constant is a singleton
+============================================================
+  CARD === CARD ? same
+   >> Enums are perfect when the set is fixed AND every case has the same shape.

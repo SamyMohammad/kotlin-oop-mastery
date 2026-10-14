@@ -1,0 +1,15 @@
+
+============================================================
+  1. Labels for every status
+============================================================
+  Order placed | can cancel: true
+  On the way (EG123) | can cancel: false
+  Delivered, signed by Sara | can cancel: false
+  Cancelled: changed mind | can cancel: false
+
+============================================================
+  2. Why no else
+============================================================
+  canCancel      : every case listed, compiler re-checks on each new subtype
+  canCancelRisky : else hides new subtypes, today it returns false for Shipped
+   >> Imagine adding OrderStatus.OnHold. Only canCancel would force you to decide.
