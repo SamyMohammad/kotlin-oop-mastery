@@ -1,0 +1,17 @@
+
+============================================================
+  1. open class - overriding is optional
+============================================================
+  default channel: hi
+  default channel: hi
+
+============================================================
+  2. abstract class - overriding is required, state is shared
+============================================================
+  sms from Shop: order shipped
+
+============================================================
+  3. interface - contract only
+============================================================
+  push: sale starts
+   >> Pick abstract when subclasses share state or a constructor; interface otherwise.

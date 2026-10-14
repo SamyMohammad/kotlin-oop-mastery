@@ -1,0 +1,16 @@
+
+============================================================
+  1. Abstract members, concrete summary()
+============================================================
+  Kotlin in Depth [books] ships for 3000
+  Clean Code [books] ships for 2000
+  Compose Notes [digital] ships for 0
+   >> summary() is written once; each subclass only fills the abstract parts.
+
+============================================================
+  2. The shop Discount
+============================================================
+  SAVE10: 20000 -> 18000
+  MINUS50: 20000 -> 15000
+  HUGE: 20000 -> 0
+   >> apply() lives in the abstract base, so 'never below zero' can't be forgotten.

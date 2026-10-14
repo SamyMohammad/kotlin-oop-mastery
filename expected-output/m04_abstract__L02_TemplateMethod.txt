@@ -1,0 +1,18 @@
+
+============================================================
+  1. Same algorithm, different details
+============================================================
+  [reserve] start
+     reserving 2 item(s)
+  [reserve] done
+  [charge] start
+     charging 15000 cents
+     sending receipt email
+  [charge] done
+
+============================================================
+  2. A step that fails validation
+============================================================
+  [reserve] start
+  [reserve] validation failed, stopping
+   >> The base guarantees: no execute() without a passing validate().
