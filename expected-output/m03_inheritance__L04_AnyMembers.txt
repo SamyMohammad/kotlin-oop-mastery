@@ -1,0 +1,25 @@
+
+============================================================
+  1. Default equals = identity
+============================================================
+  Coupon(SAVE10) vs Coupon(SAVE10): different
+  default toString looks like Coupon@<hash>: true
+
+============================================================
+  2. Overriding toString
+============================================================
+  Coupon(SAVE10)
+
+============================================================
+  3. Overriding equals and hashCode together
+============================================================
+  ValueCoupon vs ValueCoupon: same
+  set size = 2
+   >> data classes (m07) generate all three for you.
+
+============================================================
+  4. is-a up the hierarchy
+============================================================
+  is CardPayment? true
+  is Payment?     true
+  is Any?         true

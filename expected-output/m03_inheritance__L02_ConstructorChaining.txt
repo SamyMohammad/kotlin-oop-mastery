@@ -1,0 +1,16 @@
+
+============================================================
+  1. Parent first, then child
+============================================================
+  Account init: owner=Sara
+  SellerAccount init: store=Sara's Mugs
+   >> Account init printed before SellerAccount init.
+
+============================================================
+  2. Secondary constructors calling super
+============================================================
+  Account init: owner=guest
+  GuestAccount() body
+  Account init: owner=guest-77
+  GuestAccount(sessionId) body
+   >> Each secondary constructor chooses which parent constructor to call.

@@ -1,0 +1,15 @@
+
+============================================================
+  1. The trap
+============================================================
+  Screen init calls render()
+  ProductScreen.render(): title=null stock=0
+  --- object finished, render() again ---
+  ProductScreen.render(): title=Blue Pen stock=12
+   >> First call saw title=null, stock=0 even though both are non-null vals.
+
+============================================================
+  2. The fix
+============================================================
+  SafeProductScreen.render(): title=Blue Pen
+   >> Construct completely, then call open members. IntelliJ warns: 'Calling non-final function in constructor'.
