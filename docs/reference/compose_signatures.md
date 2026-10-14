@@ -766,6 +766,17 @@ public abstract class ProvidableCompositionLocal<T> internal constructor(
 ) : CompositionLocal<T>(defaultFactory)
 ```
 
+### ProvidableCompositionLocal
+Artifact: `androidx.compose.runtime:runtime`
+Concept: abstract subclass of the sealed CompositionLocal; the type returned by staticCompositionLocalOf (m17).
+```kotlin
+public abstract class ProvidableCompositionLocal<T> internal constructor(
+    defaultFactory: () -> T,
+) : CompositionLocal<T>(defaultFactory) {
+    public infix fun provides(value: T): ProvidedValue<T>
+}
+```
+
 ### staticCompositionLocalOf
 Artifact: `androidx.compose.runtime:runtime`
 Concept: factory returning an abstract type (m17).

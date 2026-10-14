@@ -1,0 +1,20 @@
+
+============================================================
+  BEFORE: one class, four reasons to change
+============================================================
+  total = 32500
+  INSERT 1 32500
+  To sara@mail.com: order 1 = 32500
+
+============================================================
+  AFTER: same behaviour, separated concerns
+============================================================
+  total = 32500
+  INSERT 1 32500
+  To sara@mail.com: order 1 = 32500
+
+============================================================
+  What changed for testing
+============================================================
+  PriceCalculator can be tested alone: 60000
+   >> A shipping rule change now touches PriceCalculator only - nothing else recompiles in your head.

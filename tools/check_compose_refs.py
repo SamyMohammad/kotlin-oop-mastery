@@ -18,7 +18,8 @@ ALLOW = {"String", "Int", "Long", "Boolean", "Unit", "List", "Any", "Nothing",
          "Product", "Cart", "Order", "Payment", "Price", "UiState", "ProductCard",
          "OrderStatus", "CartScreen", "ProductListScreen", "ShopViewModel",
          # classes defined in earlier course docs
-         "DiscountBadgePainter", "TicketShape", "CartViewModel", "CartUiState"}
+         "DiscountBadgePainter", "TicketShape", "CartViewModel", "CartUiState",
+         "CartContent", "CartTotals", "AddButton", "PriceText", "PriceFormatter"}
 
 
 def known_symbols() -> set[str]:

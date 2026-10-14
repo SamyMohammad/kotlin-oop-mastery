@@ -1,0 +1,14 @@
+
+============================================================
+  BEFORE: a subtype that breaks the promise
+============================================================
+  Rectangle: expected area 20, got 20
+  SquareBad: expected area 20, got 16
+   >> Same function, a valid-looking subtype, a wrong answer.
+
+============================================================
+  AFTER: immutable shapes, no false promise
+============================================================
+  Rect(width=5, height=4) area=20
+  Square(side=4) area=16
+   >> Square is no longer a Rectangle with setters. Every Shape honours what Shape promises.

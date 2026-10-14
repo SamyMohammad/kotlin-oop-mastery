@@ -1,0 +1,14 @@
+
+============================================================
+  BEFORE: a fat interface
+============================================================
+  cash collected: 5000
+  refund blew up at runtime: cash cannot refund online
+
+============================================================
+  AFTER: role interfaces
+============================================================
+  cash collected: 5000
+  card charged: 5000
+  card refunded: 5000
+   >> The impossible call moved from a runtime crash to a compile error.

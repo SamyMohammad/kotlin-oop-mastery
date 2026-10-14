@@ -1,0 +1,13 @@
+
+============================================================
+  BEFORE: welded to MySQL
+============================================================
+  MySQL INSERT order 1
+
+============================================================
+  AFTER: the store is injected
+============================================================
+  MySQL INSERT order 2
+  fake saved order 3
+  fake recorded: [3]
+   >> The arrow of dependency now points at OrderStore - from both sides.
