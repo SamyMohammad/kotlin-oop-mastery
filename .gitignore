@@ -1,0 +1,9 @@
+.gradle/
+build/
+out/
+.idea/
+.kotlin/
+*.iml
+local.properties
+__pycache__/
+.superpowers/
