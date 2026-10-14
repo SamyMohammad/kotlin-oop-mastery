@@ -1,0 +1,19 @@
+
+============================================================
+  1. Cart protects its invariants
+============================================================
+  items = [CartLine(productId=1, qty=5), CartLine(productId=2, qty=1)]
+  total qty = 6
+  rejected: qty must be positive
+
+============================================================
+  2. Defensive copy on the way in
+============================================================
+  caller's list = []
+  wishlist      = [Mug, Pen]
+
+============================================================
+  3. The object decides what is valid
+============================================================
+  wishlist      = [Mug, Pen, Cap]
+   >> Encapsulation = keeping the rules true, no matter what callers do.

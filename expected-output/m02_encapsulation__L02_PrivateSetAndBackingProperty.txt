@@ -1,0 +1,18 @@
+
+============================================================
+  1. private set
+============================================================
+  count = 2
+
+============================================================
+  2. A read-only type is not a wall
+============================================================
+  leaky cart now has: [Pen, Stolen TV]
+   >> The cast worked because items IS the private MutableList.
+
+============================================================
+  3. Return a copy
+============================================================
+  snapshot the caller changed: [Pen, Mug, Stolen TV]
+  safe cart still has:         [Pen, Mug]
+   >> toList() hands out a new list. Mutating it cannot reach the cart.

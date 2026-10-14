@@ -1,0 +1,23 @@
+
+============================================================
+  1. What outside code can see
+============================================================
+  nickname=S, lastLoginDay=14
+  password ok? true
+
+============================================================
+  2. protected from a subclass
+============================================================
+  Sara has 100 points
+
+============================================================
+  3. private top-level and internal
+============================================================
+  Kotlin Shop total: EGP 123.45
+   >> formatCents is private to this file. Another file in the same package cannot call it.
+
+============================================================
+  4. Kotlin vs Java defaults
+============================================================
+  Kotlin default = public. Java default = package-private.
+  Kotlin has no package-private. Use internal or private top-level instead.

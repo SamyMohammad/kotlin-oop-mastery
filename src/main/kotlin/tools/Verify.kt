@@ -69,7 +69,10 @@ fun main(args: Array<String>) {
             if ("[FAIL" !in stub && "[PASS]" !in stub) errors += "${dir.name}: Exercises printed no checks"
             val sol = runCatching { capture("${dir.name}.exercises.solutions.SolutionsKt") }
                 .getOrElse { errors += "${dir.name}: Solutions main crashed: $it"; continue }
-            if ("[FAIL" in sol || "ALL PASS" !in sol) errors += "${dir.name}: Solutions not all PASS"
+            if ("[FAIL" in sol || "ALL PASS" !in sol) {
+                val failing = sol.lines().filter { "[FAIL" in it }.joinToString(" | ") { it.trim() }
+                errors += "${dir.name}: Solutions not all PASS: $failing"
+            }
         }
         "selftest" -> {
             check(normalize("a  \r\nb\r\n\r\n") == "a\nb\n") { "normalize failed" }
