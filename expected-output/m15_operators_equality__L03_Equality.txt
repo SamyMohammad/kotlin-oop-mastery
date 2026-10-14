@@ -1,0 +1,21 @@
+
+============================================================
+  1. == vs ===
+============================================================
+  a == b  -> true
+  a === b -> false
+  null == a -> false   (no NullPointerException)
+
+============================================================
+  2. Breaking the hashCode contract
+============================================================
+  good set size   = 1
+  broken set size = 2
+  broken contains BrokenSku(X)? false
+   >> Equal objects landed in different hash buckets, so the set treats them as different.
+
+============================================================
+  3. compareTo inconsistent with equals
+============================================================
+  TreeSet keeps 2 scores: [Mona, Sara]
+   >> Sara and Omar compare as 0, so the TreeSet thinks they are the same element.
