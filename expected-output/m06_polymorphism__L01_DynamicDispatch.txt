@@ -1,0 +1,23 @@
+
+============================================================
+  1. One call, many behaviours
+============================================================
+  SMS to Sara: your order shipped
+  EMAIL to Sara: [Kotlin Shop] your order shipped
+  PUSH to device of Sara: your order shipped
+  URGENT SMS to Sara: YOUR ORDER SHIPPED
+   >> The loop only knows Notifier. Each object runs its own send().
+
+============================================================
+  2. Static type vs runtime type
+============================================================
+  static type  = SmsNotifier
+  runtime type = UrgentSms
+  member send(): URGENT SMS to Omar: HI
+
+============================================================
+  3. Extensions do NOT dispatch dynamically
+============================================================
+  n.kind() = plain sms
+  u.kind() = urgent sms
+   >> Same object both times. The extension was picked from the declared type.

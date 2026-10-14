@@ -1,0 +1,21 @@
+
+============================================================
+  1. Overload chosen by parameter type and count
+============================================================
+  EGP 125
+  USD 125
+  EGP 125.50
+
+============================================================
+  2. Chosen at COMPILE time, from the static type
+============================================================
+  declared Notifier:    describe(Notifier)
+  declared SmsNotifier: describe(SmsNotifier)
+   >> Both objects are SmsNotifier at runtime. Only the declared type differed.
+
+============================================================
+  3. Default arguments replace most overloads
+============================================================
+  Hello, Sara
+  Welcome back, Omar!
+   >> For Java callers, @JvmOverloads generates the overloads from defaults.

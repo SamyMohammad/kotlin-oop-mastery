@@ -15,7 +15,9 @@ HEADING = re.compile(r"^(#{1,6})\s+(.*)")
 # Kotlin/stdlib/domain names allowed in Compose sections without a reference entry
 ALLOW = {"String", "Int", "Long", "Boolean", "Unit", "List", "Any", "Nothing",
          "Product", "Cart", "Order", "Payment", "Price", "UiState", "ProductCard",
-         "OrderStatus", "CartScreen", "ProductListScreen", "ShopViewModel"}
+         "OrderStatus", "CartScreen", "ProductListScreen", "ShopViewModel",
+         # classes defined in earlier course docs
+         "DiscountBadgePainter", "TicketShape", "CartViewModel", "CartUiState"}
 
 
 def known_symbols() -> set[str]:
