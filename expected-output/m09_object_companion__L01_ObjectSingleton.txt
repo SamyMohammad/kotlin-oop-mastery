@@ -1,0 +1,22 @@
+
+============================================================
+  1. Lazy creation
+============================================================
+  main started - AppConfig not created yet
+  AppConfig init runs (only once)
+  currency = EGP
+  darkMode = false
+  darkMode after change = true
+   >> The init block printed once, at first access - not at program start.
+
+============================================================
+  2. One instance only
+============================================================
+  a and b: same
+
+============================================================
+  3. An object can implement an interface
+============================================================
+  LOG #1: order processed
+  LOG #2: order processed
+   >> ConsoleLogger is passed like any other Logger value.
