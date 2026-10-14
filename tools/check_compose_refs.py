@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 REF = Path("docs/reference/compose_signatures.md")
-CITED = re.compile(r"`(@?[A-Z][A-Za-z0-9]*(?:\.[A-Za-z][A-Za-z0-9]*)*)`")
+CITED = re.compile(r"`(@?[A-Z][A-Za-z0-9]+(?:\.[A-Za-z][A-Za-z0-9]*)*)`")
 HEADING = re.compile(r"^(#{1,6})\s+(.*)")
 
 # Kotlin/stdlib/domain names allowed in Compose sections without a reference entry
