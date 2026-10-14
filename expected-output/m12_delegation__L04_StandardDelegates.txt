@@ -1,0 +1,12 @@
+
+============================================================
+  1. Delegating to another property
+============================================================
+  currencyCode = USD
+   >> Old callers write `currency`, the value lands in `currencyCode`.
+
+============================================================
+  2. Delegates.notNull for primitives
+============================================================
+  read before set: IllegalStateException
+  userId = 77

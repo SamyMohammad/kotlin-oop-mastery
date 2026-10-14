@@ -1,0 +1,14 @@
+
+============================================================
+  1. operator getValue / setValue
+============================================================
+  name = 'Sara Ahmed'
+
+============================================================
+  2. ReadWriteProperty with parameters
+============================================================
+    age set to 13
+    age set to 30
+    age set to 120
+  age = 120
+   >> The rule lives in ONE reusable delegate, not copied into every setter.

@@ -1,0 +1,19 @@
+
+============================================================
+  1. Decorate one method, forward the rest
+============================================================
+    [log] add Pen x2
+    [log] add Mug x1
+  lines = {Mug=1}
+
+============================================================
+  2. Works with ANY CartApi
+============================================================
+   >> LoggingCart never extends InMemoryCart. Swap the inner cart and logging still works.
+
+============================================================
+  3. The delegation gotcha
+============================================================
+  vip.name()  = VIP customer
+  vip.greet() = Hello, customer
+   >> greet() was forwarded to BasicGreeter, which called its own name(), not VipGreeter's.

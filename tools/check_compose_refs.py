@@ -14,7 +14,7 @@ HEADING = re.compile(r"^(#{1,6})\s+(.*)")
 
 # Kotlin/stdlib/domain names allowed in Compose sections without a reference entry
 ALLOW = {"String", "Int", "Long", "Boolean", "Unit", "List", "Any", "Nothing",
-         "Map", "Set", "MutableList", "MutableMap", "Pair", "Float", "Double", "Char", "Sequence",
+         "Map", "Set", "MutableList", "MutableMap", "Pair", "Float", "Double", "Char", "Sequence", "Lazy",
          "Product", "Cart", "Order", "Payment", "Price", "UiState", "ProductCard",
          "OrderStatus", "CartScreen", "ProductListScreen", "ShopViewModel",
          # classes defined in earlier course docs
