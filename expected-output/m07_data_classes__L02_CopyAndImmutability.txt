@@ -1,0 +1,24 @@
+
+============================================================
+  1. copy with named arguments
+============================================================
+  original: Product(id=1, name=Pen, priceCents=1000, tags=[])
+  sale:     Product(id=1, name=Pen, priceCents=800, tags=[])
+  renamed:  Product(id=1, name=Blue Pen, priceCents=1000, tags=[])
+
+============================================================
+  2. A new object every time
+============================================================
+  s1 = CartState(items=[], couponCode=null)
+  s2 = CartState(items=[Pen], couponCode=null)
+  s3 = CartState(items=[Pen], couponCode=SAVE10)
+  s2 and s3 same object? different
+   >> Each step is a snapshot. s1 is still empty - history is preserved.
+
+============================================================
+  3. The shallow copy trap
+============================================================
+  copied.items   = [Pen, Stolen TV]
+  original.items = [Pen, Stolen TV]
+  same list object? same
+   >> copy() copied the REFERENCE. Use read-only List and build new lists instead.

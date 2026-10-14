@@ -1,0 +1,22 @@
+
+============================================================
+  1. Body properties are ignored
+============================================================
+  a == b ? true
+  a.toString() = Order(id=1, total=500)
+  a.copy().note = ''
+   >> The note was lost by copy() and ignored by equals.
+
+============================================================
+  2. Mutating a key inside a HashSet
+============================================================
+  contains before = true
+  contains after  = false
+  set still has 1 element(s)
+   >> Keep data classes immutable (val only), especially when used as keys.
+
+============================================================
+  3. What data classes cannot be
+============================================================
+  open data class X   -> error: modifier 'open' is incompatible with 'data'
+  data class Y : SomeInterface -> fine

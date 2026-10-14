@@ -1,0 +1,27 @@
+
+============================================================
+  1. equals: plain class vs data class
+============================================================
+  PlainPoint(1,2) vs PlainPoint(1,2): different
+  DataPoint(1,2)  vs DataPoint(1,2):  same
+
+============================================================
+  2. toString
+============================================================
+  DataPoint(x=3, y=4)
+  Product(id=1, name=Pen, priceCents=500, tags=[])
+  plain toString starts with class name + @: true
+
+============================================================
+  3. hashCode -> sets and maps work by value
+============================================================
+  plain set size = 2
+  data set size  = 1
+
+============================================================
+  4. Destructuring with componentN
+============================================================
+  id=7 name=Mug price=4500
+  Pen costs 500
+  Cap costs 9000
+   >> Destructuring is by POSITION, not by name. Reordering properties changes meaning.
