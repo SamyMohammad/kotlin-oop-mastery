@@ -1,0 +1,18 @@
+
+============================================================
+  1. Our own receiver lambda
+============================================================
+  Pen x2 | Mug x1 | Total 40.00
+
+============================================================
+  2. buildString is the same idea
+============================================================
+  Order #1042
+
+============================================================
+  3. Scope functions
+============================================================
+  also sees 3 items
+  sizeAfter=2, apply returned same list: same
+  upper=[PEN, MUG, CAP]
+   >> apply/also return the object - good for configuring. let/run return the result.

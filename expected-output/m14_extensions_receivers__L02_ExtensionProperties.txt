@@ -1,0 +1,13 @@
+
+============================================================
+  1. Computed extension properties
+============================================================
+  Pen: expensive=false, in stock
+  Laptop: expensive=true, only 3 left
+  Mug: expensive=false, out of stock
+
+============================================================
+  2. On a generic type
+============================================================
+  stock value = 7560000
+   >> Extension properties read like fields but are computed each time.

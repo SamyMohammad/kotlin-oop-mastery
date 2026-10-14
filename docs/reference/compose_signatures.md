@@ -584,6 +584,37 @@ public fun LazyColumn(
 
 ## m14
 
+### RowScope
+Artifact: `androidx.compose.foundation:foundation-layout`
+Concept: scope interface used as the receiver of Row content; holds member extensions like weight (m14).
+```kotlin
+public interface RowScope {
+    public fun Modifier.weight(weight: Float, fill: Boolean = true): Modifier
+    // ...
+}
+```
+
+### ColumnScope
+Artifact: `androidx.compose.foundation:foundation-layout`
+Concept: scope interface used as the receiver of Column and Card content (m14).
+```kotlin
+public interface ColumnScope {
+    public fun Modifier.weight(weight: Float, fill: Boolean = true): Modifier
+    // ...
+}
+```
+Note: mirrors the verified RowScope declaration.
+
+### BoxScope
+Artifact: `androidx.compose.foundation:foundation-layout`
+Concept: scope interface used as the receiver of Box content (m14).
+```kotlin
+public interface BoxScope {
+    public fun Modifier.align(alignment: Alignment): Modifier
+    // ...
+}
+```
+
 ### RowScope.weight
 Artifact: `androidx.compose.foundation:foundation-layout`
 Concept: member extension declared inside a scope interface: only callable inside Row (m14).

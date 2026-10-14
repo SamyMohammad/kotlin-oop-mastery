@@ -1,0 +1,12 @@
+
+============================================================
+  1. A scoped extension
+============================================================
+  Image(25%) | Name and price(75%)
+  Qty(50%) | Remove(50%)
+
+============================================================
+  2. Why it matters
+============================================================
+  weight() only makes sense inside a row, so it only EXISTS inside a row.
+   >> Same design as Compose: Modifier.weight is only available inside Row { } and Column { }.
