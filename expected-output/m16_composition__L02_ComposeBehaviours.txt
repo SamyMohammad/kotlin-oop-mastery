@@ -1,0 +1,15 @@
+
+============================================================
+  1. Build combinations at runtime
+============================================================
+  [log] SMS: hi
+  [log] EMAIL: hi
+  [retry x3] [log] SMS: hi
+  [retry x2] EMAIL: HI
+
+============================================================
+  2. Swap behaviour without touching OrderService
+============================================================
+  SMS: order 7 shipped
+  [log] [retry x2] EMAIL: order 7 shipped
+   >> 5 small classes cover every combination. Adding a feature = adding ONE class.

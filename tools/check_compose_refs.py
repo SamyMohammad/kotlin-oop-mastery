@@ -39,7 +39,7 @@ def cited_in_compose_sections(text: str) -> list[tuple[int, str]]:
         m = HEADING.match(line) if not in_fence else None
         if m:
             depth = len(m.group(1))
-            if "Compose" in m.group(2):
+            if m.group(2).strip() in ("في Compose", "In Compose"):
                 level = depth
             elif level is not None and depth <= level:
                 level = None

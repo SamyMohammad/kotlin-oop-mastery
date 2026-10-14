@@ -1,0 +1,18 @@
+
+============================================================
+  1. A few of the combinations
+============================================================
+  [log] SMS: order shipped
+  [log] EMAIL: order shipped
+  [retry] [log] SMS: order shipped
+   >> Logging is copy-pasted into every class that needs it.
+
+============================================================
+  2. How many classes would we need?
+============================================================
+  2 channels, 1 optional features -> 4 classes
+  2 channels, 2 optional features -> 8 classes
+  2 channels, 3 optional features -> 16 classes
+  2 channels, 4 optional features -> 32 classes
+  3 channels, 4 optional features -> 48 classes
+   >> Each new feature DOUBLES the class count. L02 needs one class per feature instead.

@@ -1,0 +1,20 @@
+
+============================================================
+  1. All slots filled
+============================================================
+  == Cart ==
+  2 items, EGP 50.00
+  -- Checkout --
+
+============================================================
+  2. Only the body
+============================================================
+  Nothing in your cart yet
+
+============================================================
+  3. A wrapper made by composition
+============================================================
+  == Kotlin Shop / Product ==
+  Blue Pen - EGP 5.00
+  -- Free delivery over EGP 500 --
+   >> renderShopScreen reuses renderScreen by calling it. No base class, no override.
