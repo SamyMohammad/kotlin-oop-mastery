@@ -1,0 +1,17 @@
+
+============================================================
+  1. Classic builder
+============================================================
+  OrderJava(id=1, items=[Pen, Mug], giftWrap=true, note=null)
+
+============================================================
+  2. Named and default arguments
+============================================================
+  Order(id=2, items=[Pen, Mug], giftWrap=true, note=null)
+  Order(id=3, items=[Pen, Mug], giftWrap=true, note=leave at door)
+   >> Same readability, no builder class, plus copy() for variations.
+
+============================================================
+  3. DSL when construction has steps or loops
+============================================================
+  Order(id=4, items=[Pen, Pen, Pen, Mug], giftWrap=true, note=null)

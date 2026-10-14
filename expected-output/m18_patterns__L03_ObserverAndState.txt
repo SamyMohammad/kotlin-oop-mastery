@@ -1,0 +1,19 @@
+
+============================================================
+  1. Observer
+============================================================
+  badge shows 10
+  badge shows 5
+  ALERT: only 2 pens left
+   >> After unsubscribing, the badge stopped receiving updates.
+
+============================================================
+  2. State
+============================================================
+  state: Created
+     cannot ship when Created
+  state: Paid
+  state: Shipped
+     cannot cancel when Shipped
+  state: Shipped
+   >> Each state object owns its rules. Adding OnHold = one new object, no edits elsewhere.

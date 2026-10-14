@@ -1,0 +1,13 @@
+
+============================================================
+  1. Decorators stack in any order
+============================================================
+  base -> 10% off -> +14% VAT: 10260
+  base -> +14% VAT -> 10% off: 10260
+   >> Same pieces, different order. Here the result happens to match; with fixed-amount coupons it would not.
+
+============================================================
+  2. Adapter
+============================================================
+  2000g via courier = 3500 cents
+   >> Checkout code only knows ShippingMethod. The old SDK stays hidden behind the adapter.

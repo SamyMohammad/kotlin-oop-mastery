@@ -1,0 +1,15 @@
+
+============================================================
+  1. Strategy: same checkout, different algorithms
+============================================================
+  charged 10000 to card *4242 (+2% fee: 200)
+  debited 10000 from wallet 010-111
+  collect 10000 in cash on delivery
+
+============================================================
+  2. Factory: choose from user input
+============================================================
+  charged 5000 to card *1111 (+2% fee: 100)
+  collect 5000 in cash on delivery
+  unsupported payment method: bitcoin
+   >> The factory returns a sealed result instead of throwing on unknown input.
